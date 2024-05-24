@@ -1825,6 +1825,10 @@ form.top-form {
     margin: 5px 10px;
 }
 
+.portfolio figure img {
+    border-radius: 23px;
+}
+
 .services .test-next,
 .services .test-prev {
     position: absolute;
