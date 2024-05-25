@@ -1,38 +1,4 @@
-  <section class="footer">
-      <div class="container">
-          <div class="row align-items-center">
-              <div class="col-12 col-lg-7">
-                  <div class="left-content">
-                      <h3 class="f-40 fw-700 text-white">Contact us today to receive a free consultation</h3>
-                      <p class="text-white pt-3 pb-2">Meet The Brains Behind Front Line Writers.. With Years Of Experience In The Design Industry,
-                          Our Expertise Make Sure Your Business With Us Goes Smooth And You Designs Bring A Smile On
-                          Your Face.</p>
-                      <div class="d-block align-items-center gap-3 my-4">
-                          <a href="tel:<?php echo $number ?>" class="call-wrap">
-                              <i class="fa-solid fa-user"></i>
-                              <div>
-                                  <p> TALK TO AN EXPERT</p>
-                                  <?php echo $number ?>
-                              </div>
-                          </a>
-                          <a href="tel:<?php echo $number ?>" class="call-wrap">
-                              <i class="fa-solid fa-message"></i>
-                              <div>
-                                  <p>EMAIL US</p>
-                                  <span>
-                                      <?php echo $email ?>
-                                  </span>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-lg-5">
-                  <img src="assets/images/book-right.png" class="my-lg-0 my-3" alt="footer img">
-              </div>
-          </div>
-      </div>
-  </section>
+
   <div class="sec-footer py-4 bg-black text-white">
       <ul class="d-flex justify-content-evenly">
           <li>All rights reserved Front Line Writers</li>

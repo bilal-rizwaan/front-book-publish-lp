@@ -234,10 +234,10 @@ $('.testimonial-slider').slick({
   autoplay: false,
   arrows: false,
   dots: true,
-  vertical: true,
+  // vertical: true,
   prevArrow: true,
   nextArrow: true,
-  verticalSwiping: true
+  // verticalSwiping: true
       
   });
 

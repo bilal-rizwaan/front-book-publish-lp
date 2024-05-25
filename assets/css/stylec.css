@@ -22,6 +22,33 @@
     box-sizing: border-box;
 }
 
+.list_btm {
+    background: #fff;
+    box-shadow: 2px 2px 40px #324b537a;
+    padding: 31px 30px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    top: -3rem;
+}
+
+.list_btm .col-lg-3 {
+    border-right: 2px solid #00dfba;
+}
+
+.list_btm .col-lg-3:last-child {
+    border: none;
+}
+
+.list_btm img {
+    width: 48px;
+}
+
+.list_btm p {
+    font-size: 15px;
+    margin: 22px 0 0;
+}
+
 *::selection {
     background-color: var(--blue);
     color: var(--white);
@@ -118,6 +145,16 @@ p,
 ul,
 span {
     margin-bottom: 0;
+}
+
+ul.d-flex.align-items-center.award_images {}
+
+ul.d-flex.align-items-center.award_images li {
+    margin: 0 15px;
+}
+
+ul.d-flex.align-items-center.award_images li img {
+    width: 104px;
 }
 
 img {
@@ -268,6 +305,10 @@ section {
     font-weight: 800;
 }
 
+.banner h1 {
+    color: #fff;
+}
+
 .f-900 {
     font-weight: 900;
 }
@@ -312,6 +353,30 @@ section {
     color: var(--white);
 }
 
+.awards h4 {
+    font-size: 50px;
+    line-height: 45px;
+    color: #fff ! IMPORTANT;
+}
+
+.awards h4 span {
+    font-size: 38px;
+    line-height: 48px;
+    color: #fff;
+}
+
+.awards .col-lg-7 {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.awards p {
+    color: #fff;
+    font-size: 16px;
+    margin: 15px 0 0 0;
+}
+
 .blue {
     color: #fff;
 }
@@ -321,8 +386,57 @@ section {
 }
 
 .banner {
-    background: url(../images/banner-bg.png) center top / cover no-repeat;
+    background: linear-gradient(45deg, #2d77b9, #00dfba);
+    padding: 3rem 0 6rem;
+    position: relative;
+    animation: gradient 15s ease infinite;
+    background: linear-gradient(-45deg, #23ccb3, #2574c4, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.banner::After {
+    content: '';
+    position: absolute;
+    background: url(https://www.pngkey.com/png/full/959-9590612_cover-book-cover.png);
+    right: 0;
+    bottom: 16%;
+    width: 47%;
+    height: 74%;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    width: 477px;
+    height: 467px;
+    background: url(https://static.vecteezy.com/system/resources/previews/022/483/821/non_2x/studious-style-3d-cute-girl-student-transparent-background-free-png.png);
+    bottom: -10px;
+    left: -58px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cta_frr {
+    background: linear-gradient(-45deg, #23ccb3, #0580ac, #0580ac, #23d5ab);
     padding: 5rem 0;
+    margin: 7rem 0 0 0;
 }
 
 .banner-wrap {
@@ -879,9 +993,10 @@ form.main__form button {
 }
 
 .awards {
-    background-color: #C9E5FA;
+    background-color: #0d0f0e;
     z-index: 999;
-    padding: 29px 0;
+    padding: 30px 29px;
+    border-radius: 21px;
 }
 
 .awards .after-img {
@@ -971,16 +1086,18 @@ form.top-form {
 .banner .list li {
     list-style: disc;
     margin-left: 17px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
+    color: #fff;
+    line-height: 25px;
 }
 
 .banner form {
     max-width: 600px;
-    background: radial-gradient(circle, rgb(50 147 252) 0%, rgb(45 119 185) 24%);
-    padding: 20px;
-    border: 5px solid var(--sky);
-    border-radius: 10px;
+    background: #0000007d;
+    padding: 26px;
+    /* border: 5px solid var(--sky); */
+    border-radius: 20px;
 }
 
 .banner form input {
@@ -1025,6 +1142,9 @@ form.top-form {
     position: absolute;
     top: 0;
     z-index: -1;
+    height: 169px;
+    left: -2px;
+    display: none;
 }
 
 .revi {
@@ -1499,6 +1619,7 @@ form.top-form {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 4rem 0 0 0;
 }
 
 .services-card-box-container .card-box:hover {
@@ -1593,17 +1714,18 @@ form.top-form {
 .testimonial input {
     display: block;
     width: 100%;
-    height: 40px;
+    height: 55px;
     background-color: transparent;
     color: var(--white);
     border-bottom: 1px solid var(--white);
-    margin-bottom: 35px;
-    font-size: 15px;
+    margin-bottom: 44px;
+    font-size: 17px;
 }
 
 .testimonial label {
     font-size: 14px;
     color: var(--white);
+    display: none;
 }
 
 .testimonial form {
@@ -1616,12 +1738,13 @@ form.top-form {
 }
 
 .testimonial .slide {
-    max-width: 570px;
-    height: 200px;
+    max-width: 545px;
+    height: 234px;
     background-color: #f5f5f5;
     padding: 40px 25px 50px 25px;
     position: relative;
     margin-top: 30px;
+    border-radius: 10px;
 }
 
 .testimonial .slide svg {
@@ -1637,6 +1760,13 @@ form.top-form {
 
 .testimonial {
     background: url(../images/testi-bg.webp) center right / contain no-repeat;
+    text-align: center;
+    padding: 3rem 0 0;
+}
+
+.testimonial h3 {
+    font-size: 35px;
+    margin: 0 0 32px 0;
 }
 
 .footer {
@@ -1689,7 +1819,7 @@ form.top-form {
     position: absolute;
     opacity: 0;
     overflow: hidden;
-    color: #2574c4;
+    color: #00dfba;
     padding-bottom: 5px;
     -webkit-animation: rotateWord 18s linear infinite 0s;
     -moz-animation: rotateWord 18s linear infinite 0s;
@@ -2043,3 +2173,72 @@ a#entry-box_close {
 }
 
 /* modal  */
+
+.author_site {
+    padding: 4rem 0;
+    background: #2d77b90f;
+    margin: 0 0 5rem 0;
+}
+
+.author_site .hd {
+    text-align: center;
+}
+
+.author_site .hd h3 {
+    font-size: 3rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin: 0 0 28px 0;
+}
+
+.author_site .hd p {
+    font-size: 16px;
+    margin: 25px 0;
+}
+
+.author_site img {
+    border-radius: 20px;
+    width: 71%;
+    height: 279px;
+    object-fit: cover;
+    position: relative;
+    top: 29px;
+    margin: 0 auto;
+    display: block;
+}
+
+.author_site .crd {
+    padding: 41px;
+    background: #fff;
+    box-shadow: 2px 2px 17px #0000001f;
+    border-radius: 12px;
+    transition: all 0.3s ease-in;
+    height: 321px;
+}
+
+.author_site .crd:hover {
+    background: #2d76b7;
+}
+
+.author_site .crd:hover h4,
+.author_site .crd:hover p,
+.author_site .crd:hover span {
+    color: #fff;
+}
+
+.author_site div span {
+    color: #0080d9;
+    font-size: 16px;
+}
+
+.author_site div h4 {
+    font-family: 'Poppins';
+    margin: 10px 0;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+}
+
+.author_site div p {
+    font-size: 15px;
+}
